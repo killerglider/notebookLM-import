@@ -189,7 +189,7 @@ const ChatArea = ({
                   </div>
                   <div>
                     <h1 className="text-2xl font-medium text-gray-900">
-                      {isGenerating ? 'Generating content...' : notebook?.title || 'Untitled Notebook'}
+                      {isGenerating ? 'Generating content...' : notebook?.title || 'Untitled Story'}
                     </h1>
                     <p className="text-sm text-gray-600">{sourceCount} source{sourceCount !== 1 ? 's' : ''}</p>
                   </div>
