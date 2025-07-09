@@ -13,15 +13,15 @@ const EmptyDashboard = () => {
     console.log('Create notebook button clicked');
     console.log('isCreating:', isCreating);
     createNotebook({
-      title: 'Untitled notebook',
+      title: 'Untitled Story',
       description: ''
     }, {
       onSuccess: data => {
-        console.log('Navigating to notebook:', data.id);
+        console.log('Navigating to Story:', data.id);
         navigate(`/notebook/${data.id}`);
       },
       onError: error => {
-        console.error('Failed to create notebook:', error);
+        console.error('Failed to create Story:', error);
       }
     });
   };
