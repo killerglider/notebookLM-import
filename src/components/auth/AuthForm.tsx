@@ -74,7 +74,7 @@ const AuthForm = () => {
       <CardHeader>
         <CardTitle>Sign In</CardTitle>
         <CardDescription>
-          Enter your credentials to access your notebooks
+          Enter your credentials to access your stories
         </CardDescription>
       </CardHeader>
       <CardContent>
