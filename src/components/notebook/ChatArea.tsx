@@ -116,7 +116,7 @@ const ChatArea = ({
   };
   const handleRefreshChat = () => {
     if (notebookId) {
-      console.log('Refresh button clicked for notebook:', notebookId);
+      console.log('Refresh button clicked for story:', notebookId);
       deleteChatHistory(notebookId);
       // Reset clicked questions when chat is refreshed
       setClickedQuestions(new Set());
@@ -199,7 +199,7 @@ const ChatArea = ({
                   {isGenerating ? <div className="flex items-center space-x-2 text-gray-600">
                       
                       <p>AI is analyzing your source and generating a title and description...</p>
-                    </div> : <MarkdownRenderer content={notebook?.description || 'No description available for this notebook.'} className="prose prose-gray max-w-none text-gray-700 leading-relaxed" />}
+                    </div> : <MarkdownRenderer content={notebook?.description || 'No description available for this story.'} className="prose prose-gray max-w-none text-gray-700 leading-relaxed" />}
                 </div>
 
                 {/* Chat Messages */}
